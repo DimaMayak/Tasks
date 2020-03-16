@@ -32,14 +32,15 @@ public class LinkedList {
         }
     }
 
-    public void recursionOut() {
-        recursion(head);
-    }
-
-    private void recursion(Node node) {
-        if (node != null) {
-            System.out.println(node.getData());
-            recursion(node.getNextElement());
-        }
-    }
+    
+//    public void recursionOut() {
+//        recursion(head);
+//    }
+//
+//    private void recursion(Node node) {
+//        if (node != null) {
+//            System.out.println(node.getData());
+//            recursion(node.getNextElement());
+//        }
+//    }
 }
