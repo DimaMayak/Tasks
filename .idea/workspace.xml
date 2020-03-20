@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0466136a-a897-481f-bb2e-63d7041a294a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arraylist/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arraylist/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arraylist/LinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arraylist/LinkedListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/arraylist/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arraylist/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest">
+  <component name="RunManager" selected="JUnit.NodeTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="arraylist" />
@@ -88,9 +80,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.NodeTest" />
         <item itemvalue="JUnit.LinkedListTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.NodeTest" />
       </list>
     </recent_temporary>
   </component>
