@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class NodeTest {
 
-
     @Test
     void testGetNextElement() throws Exception {
         Node node = new Node(10);
