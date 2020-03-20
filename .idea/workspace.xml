@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0466136a-a897-481f-bb2e-63d7041a294a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/NodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arraylist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/arraylist.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/arraylist/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/arraylist/LinkedList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -22,6 +29,23 @@
   </component>
   <component name="ProjectId" id="1YcAupjfpBBmPlBDQxV7Fj5NAEI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -34,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LinkedListTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="arraylist" />
@@ -42,8 +66,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="arraylist" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LinkedListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="arraylist" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="NodeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LinkedListTest" />
+        <item itemvalue="JUnit.NodeTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -66,7 +110,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

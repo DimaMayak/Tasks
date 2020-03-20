@@ -4,6 +4,10 @@ public class LinkedList {
 
     private Node head;
 
+    public Node getHead() {
+        return head;
+    }
+
     public LinkedList() {
     }
 
@@ -17,7 +21,6 @@ public class LinkedList {
             }
             current.setNextElement(node);
         }
-
     }
 
     public void out() {
@@ -34,8 +37,13 @@ public class LinkedList {
 
     public void recursionOut() {
         recursion(head);
-        //try too add changes in new branch 
+        //try too add changes in new branch
     }
+
+//    public  Node getByIndex(){
+//
+//    }
+
 
     private void recursion(Node node) {
         if (node != null) {
