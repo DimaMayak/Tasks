@@ -11,17 +11,11 @@ public class LinkedList {
 
 
     public int getLengthOfList() {
-        if (head==null){
-        return lengthOfList;}
-        else {
-            lengthOfList++;
-            head=head.getNextElement();
-            getLengthOfList();
-            return lengthOfList;}
+        return lengthOfList;
     }
 
     public LinkedList() {
-        this.lengthOfList=0;
+        this.lengthOfList = 0;
     }
 
     public void addElement(Node node) {
@@ -34,6 +28,7 @@ public class LinkedList {
             }
             current.setNextElement(node);
         }
+        lengthOfList++;
     }
 
     public void out() {
@@ -48,8 +43,30 @@ public class LinkedList {
         }
     }
 
+    public Node getElementById(int i) {
+        Node current = head;
+        if (head == null) {
+            System.out.println("List is empty");
+            return null;
+        } else if (i > lengthOfList) {
+            System.out.println("Out of list");
+        } else {
+            for (int j = 0; j < i; j++) {
+                current = current.getNextElement();
+            }
 
-    //    public  Node getByIndex(){
+        }
+        return current;
+    }
+
+    @Override
+    public String toString() {
+        return "LinkedList{" +
+                "head=" + head +
+                ", lengthOfList=" + lengthOfList +
+                '}';
+    }
+//    public  Node getByIndex(){
     //
     //    }
 

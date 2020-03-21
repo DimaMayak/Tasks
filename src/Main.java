@@ -10,5 +10,7 @@ public class Main {
         linkedList.out();
         LinkedList list2 = new LinkedList();
         System.out.println(linkedList.getLengthOfList());
+        linkedList.out();
+        System.out.println(linkedList.getElementById(1));
     }
 }
