@@ -6,6 +6,11 @@ public class Main {
         linkedList.addElement(new Node(5));
         linkedList.addElement(new Node(6));
         linkedList.addElement(new Node(7));
+        linkedList.addElement(new Node(8));
         linkedList.out();
+        LinkedList list2 = new LinkedList();
+        System.out.println(linkedList.getLengthOfList());
+        linkedList.out();
+        System.out.println(linkedList.getElementById(1));
     }
 }
