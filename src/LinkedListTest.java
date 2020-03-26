@@ -15,6 +15,18 @@ class LinkedListTest {
     }
 
     @Test
+    void testGetElementById() throws Exception {
+        LinkedList list = new LinkedList();
+        list.addElement(new Node(10));
+        list.addElement(new Node(11));
+        list.addElement(new Node(12));
+        Node node1 = new Node(13);
+        list.addElement(node1);
+        list.addElement(new Node(14));
+        assertEquals(node1,list.getElementById(3));
+    }
+
+    @Test
     void testAddNotFirstElement() throws Exception {
         LinkedList list = new LinkedList();
         assertNull(list.getHead());
@@ -27,13 +39,36 @@ class LinkedListTest {
     }
 
     @Test
+    void testReverse() throws Exception{
+        LinkedList list = new LinkedList();
+        list.addElement(new Node(0));
+        list.addElement(new Node(1));
+        list.addElement(new Node(2));
+        list.addElement(new Node(3));
+        LinkedList reverse = new LinkedList();
+        reverse=list.reverse();
+        if (list.getLengthOfList()==0){
+            assertEquals(reverse.getHead(),null);
+        }else if(list.getLengthOfList()==1){
+            assertEquals(reverse.getHead(),list.getHead());
+        }else if((list.getLengthOfList() % 2)==0 && list.getLengthOfList()!=1){
+            for(int i=list.getLengthOfList()-1;i>=0;i--){
+                assertEquals(reverse.getElementById(reverse.getLengthOfList()-i-1).getData(),list.getElementById(i).getData());
+            }
+        }else {
+
+        }
+
+    }
+
+    @Test
     void testGetLenthOfList() throws Exception {
         LinkedList list = new LinkedList();
         list.addElement(new Node(10));
         list.addElement(new Node(11));
         list.addElement(new Node(12));
         list.addElement(new Node(13));
-        assertEquals(4,list.getLengthOfList());
+        assertEquals(4, list.getLengthOfList());
     }
 
     @Test

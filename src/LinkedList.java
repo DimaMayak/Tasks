@@ -9,7 +9,6 @@ public class LinkedList {
         return head;
     }
 
-
     public int getLengthOfList() {
         return lengthOfList;
     }
@@ -29,6 +28,17 @@ public class LinkedList {
             current.setNextElement(node);
         }
         lengthOfList++;
+    }
+
+    public LinkedList reverse() {
+        LinkedList reverseList = new LinkedList();
+        for (int i=lengthOfList-1;i>=0;i--){
+
+            Node elementById = getElementById(i);
+            reverseList.addElement(new Node(elementById.getData()));
+
+        }
+        return  reverseList;
     }
 
     public void out() {
