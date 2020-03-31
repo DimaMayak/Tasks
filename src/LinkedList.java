@@ -99,14 +99,4 @@ public class LinkedList {
                 ", lengthOfList=" + lengthOfList +
                 '}';
     }
-//    public  Node getByIndex(){
-    //
-    //    }
-
-//    private void recursion(Node node) {
-//        if (node != null) {
-//            System.out.println(node.getData());
-//            recursion(node.getNextElement());
-//        }
-//    }
 }
