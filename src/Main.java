@@ -8,9 +8,7 @@ public class Main {
         linkedList.addElement(new Node(7));
         linkedList.addElement(new Node(8));
         linkedList.getElementById(2);
-        new LinkedList();
-        LinkedList rev;
-        rev = linkedList.reverse();
-        rev.out();
+        linkedList.tReverse();
+        linkedList.out();
     }
 }

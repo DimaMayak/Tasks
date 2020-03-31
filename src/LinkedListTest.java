@@ -15,6 +15,22 @@ class LinkedListTest {
     }
 
     @Test
+    void testTReverse() throws Exception{
+        LinkedList list = new LinkedList();
+        list.addElement(new Node(0));
+        list.addElement(new Node(1));
+        list.addElement(new Node(2));
+        list.addElement(new Node(3));
+        list.addElement(new Node(4));
+        list.addElement(new Node(5));
+        LinkedList sList = new LinkedList(list.getHead());
+        list.tReverse();
+        assertEquals(sList.getLengthOfList(),list.getLengthOfList());
+        assertEquals(sList.getElementById(0).getData(),list.getElementById(5).getData());
+        assertEquals(list.getElementById(1).getData(),4);
+    }
+
+    @Test
     void testGetElementById() throws Exception {
         LinkedList list = new LinkedList();
         list.addElement(new Node(10));
@@ -71,11 +87,5 @@ class LinkedListTest {
         assertEquals(4, list.getLengthOfList());
     }
 
-    @Test
-    void out() {
-    }
 
-    @Test
-    void recursionOut() {
-    }
 }

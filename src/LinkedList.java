@@ -17,6 +17,16 @@ public class LinkedList {
         this.lengthOfList = 0;
     }
 
+    public LinkedList(Node node){
+        this.head=node;
+        this.lengthOfList=0;
+        Node current=node;
+        while(current!=null){
+            this.lengthOfList++;
+            current=current.getNextElement();
+        }
+    }
+
     public void addElement(Node node) {
         if (head == null) {
             head = node;
@@ -30,15 +40,28 @@ public class LinkedList {
         lengthOfList++;
     }
 
+    public Node tReverse() {
+        Node newHead = null;
+        Node current = this.head;
+        while (current!=null){
+            Node next=current.getNextElement();
+            current.setNextElement(newHead);
+            newHead=current;
+            current=next;
+        }
+        this.head=newHead;
+        return newHead;
+    }
+
     public LinkedList reverse() {
         LinkedList reverseList = new LinkedList();
-        for (int i=lengthOfList-1;i>=0;i--){
+        for (int i = lengthOfList - 1; i >= 0; i--) {
 
             Node elementById = getElementById(i);
             reverseList.addElement(new Node(elementById.getData()));
 
         }
-        return  reverseList;
+        return reverseList;
     }
 
     public void out() {
