@@ -10,6 +10,6 @@ class NodeTest {
         Node nextNode = new Node(15);
         Node thirdNode = new Node(12);
         node.setNextElement(nextNode);
-        assertEquals(nextNode, node.getNextElement());
+        assertEquals(nextNode,node.getNextElement());
     }
 }
