@@ -1,29 +1,27 @@
-import javax.swing.*;
-
 public class LinkedList {
 
     private Node head;
-    private int lengthOfList;
+    private int length;
 
     public Node getHead() {
         return head;
     }
 
-    public int getLengthOfList() {
-        return lengthOfList;
+    public int getLength() {
+        return length;
     }
 
     public LinkedList() {
-        this.lengthOfList = 0;
+        this.length = 0;
     }
 
-    public LinkedList(Node node){
-        this.head=node;
-        this.lengthOfList=0;
-        Node current=node;
-        while(current!=null){
-            this.lengthOfList++;
-            current=current.getNextElement();
+    public LinkedList(Node node) {
+        this.head = node;
+        this.length = 0;
+        Node current = node;
+        while (current != null) {
+            this.length++;
+            current = current.getNextElement();
         }
     }
 
@@ -37,25 +35,25 @@ public class LinkedList {
             }
             current.setNextElement(node);
         }
-        lengthOfList++;
+        length++;
     }
 
     public Node tReverse() {
         Node newHead = null;
         Node current = this.head;
-        while (current!=null){
-            Node next=current.getNextElement();
+        while (current != null) {
+            Node next = current.getNextElement();
             current.setNextElement(newHead);
-            newHead=current;
-            current=next;
+            newHead = current;
+            current = next;
         }
-        this.head=newHead;
+        this.head = newHead;
         return newHead;
     }
 
     public LinkedList reverse() {
         LinkedList reverseList = new LinkedList();
-        for (int i = lengthOfList - 1; i >= 0; i--) {
+        for (int i = length - 1; i >= 0; i--) {
 
             Node elementById = getElementById(i);
             reverseList.addElement(new Node(elementById.getData()));
@@ -81,7 +79,7 @@ public class LinkedList {
         if (head == null) {
             System.out.println("List is empty");
             return null;
-        } else if (i > lengthOfList) {
+        } else if (i > length) {
             System.out.println("Out of list");
         } else {
             for (int j = 0; j < i; j++) {
@@ -96,7 +94,7 @@ public class LinkedList {
     public String toString() {
         return "LinkedList{" +
                 "head=" + head +
-                ", lengthOfList=" + lengthOfList +
+                ", lengthOfList=" + length +
                 '}';
     }
 //    public  Node getByIndex(){
