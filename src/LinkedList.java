@@ -9,13 +9,22 @@ public class LinkedList {
         return head;
     }
 
-
     public int getLengthOfList() {
         return lengthOfList;
     }
 
     public LinkedList() {
         this.lengthOfList = 0;
+    }
+
+    public LinkedList(Node node) {
+        this.head = node;
+        this.lengthOfList = 0;
+        Node current = node;
+        while (current != null) {
+            this.lengthOfList++;
+            current = current.getNextElement();
+        }
     }
 
     public void addElement(Node node) {
@@ -30,6 +39,40 @@ public class LinkedList {
         }
         lengthOfList++;
     }
+
+    public Node tReverse() {
+        Node newHead = null;
+        Node current = this.head;
+        while (current != null) {
+            Node next = current.getNextElement();
+            current.setNextElement(newHead);
+            newHead = current;
+            current = next;
+        }
+        this.head = newHead;
+        return newHead;
+    }
+
+    public Node recursionReverse(Node head) {
+        if (head == null || head.getNextElement() == null) return head;
+        Node newHead = recursionReverse(head.getNextElement());
+        head.getNextElement().setNextElement(head);
+        head.setNextElement(null);
+        this.head=newHead;
+        return newHead;
+    }
+
+    public LinkedList reverse() {
+        LinkedList reverseList = new LinkedList();
+        for (int i = lengthOfList - 1; i >= 0; i--) {
+
+            Node elementById = getElementById(i);
+            reverseList.addElement(new Node(elementById.getData()));
+
+        }
+        return reverseList;
+    }
+
 
     public void out() {
         Node current = head;
