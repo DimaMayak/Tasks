@@ -97,14 +97,4 @@ public class LinkedList {
                 ", lengthOfList=" + length +
                 '}';
     }
-//    public  Node getByIndex(){
-    //
-    //    }
-
-//    private void recursion(Node node) {
-//        if (node != null) {
-//            System.out.println(node.getData());
-//            recursion(node.getNextElement());
-//        }
-//    }
 }
